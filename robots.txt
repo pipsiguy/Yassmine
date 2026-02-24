@@ -1,0 +1,10 @@
+User-Agent: *
+Allow: /
+Disallow: /_next/*
+Disallow: /admin/*
+Disallow: /*?q=
+Disallow: /*?s=
+Disallow: /*?ref=
+Disallow: /*?utm_
+
+Sitemap: https://salat-mahenoor-ai-creative-develope.vercel.app/sitemap.xml
