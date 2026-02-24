@@ -168,7 +168,7 @@ const about: About = {
               timeframe: "Sep 2023 - Dec 2023 · 4 mos",
               location: "Taipei, Taipei City, Taiwan · On-site",
               achievements: [
-                <>Genetics & Neuropathy Research, Immunohistochemistry & Protein Staining (PGP9.5), and +2 skills</>,
+                <>Genetics & Neuropathy Research, Immunohistochemistry & Protein Staining (PGP9.5)</>,
               ],
               images: [],
             },
@@ -179,7 +179,7 @@ const about: About = {
               timeframe: "Sep 2022 - Dec 2022 · 4 mos",
               location: "Buenos Aires Province, Argentina · On-site",
               achievements: [
-                <>Advanced PCR & Gel Electrophoresis Techniques, Research Data Collection & Analysis, and +2 skills</>,
+                <>Advanced PCR & Gel Electrophoresis Techniques, Research Data Collection & Analysis</>,
               ],
               images: [],
             },
