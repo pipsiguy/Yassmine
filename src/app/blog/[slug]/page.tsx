@@ -1,4 +1,4 @@
-import { notFound } from "next/navigation";
+// import { notFound } from "next/navigation";
 import { CustomMDX, ScrollToHash, StructuredData } from "@/components";
 import {
   Meta,
@@ -72,7 +72,8 @@ export default async function Blog({ params }: { params: Promise<{ slug: string 
   let post = getPosts(["src", "app", "blog", "posts"]).find((post) => post.slug === slugPath);
 
   if (!post) {
-    notFound();
+    // Static site: just show a placeholder or redirect
+    return <div>Post not found.</div>;
   }
 
   const avatars =

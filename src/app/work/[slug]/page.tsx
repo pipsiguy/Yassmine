@@ -76,7 +76,8 @@ export default async function Project({
   let post = getPosts(["src", "app", "work", "projects"]).find((post) => post.slug === slugPath);
 
   if (!post) {
-    notFound();
+    // Static site: just show a placeholder or redirect
+    return <div>Work not found.</div>;
   }
 
   const avatars =
