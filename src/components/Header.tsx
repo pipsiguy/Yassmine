@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { Fade, Flex, Line, Row, ToggleButton } from "@once-ui-system/core";
 
 import { routes, display, person, about, blog, work, testimonials } from "@/resources";
+import { timeZoneToLocation } from "@/lib/utils";
 import { ThemeToggle } from "./ThemeToggle";
 import styles from "./Header.module.scss";
 
@@ -73,7 +74,7 @@ export const Header = () => {
         }}
       >
         <Row paddingLeft="12" fillWidth vertical="center" textVariant="body-default-s">
-          {display.location && <Row s={{ hide: true }}>{person.location}</Row>}
+          {display.location && <Row s={{ hide: true }}>{timeZoneToLocation(person.location)}</Row>}
         </Row>
         <Row fillWidth horizontal="center">
           <Row

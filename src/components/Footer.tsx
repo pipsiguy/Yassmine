@@ -1,4 +1,4 @@
-import { Row, IconButton, SmartLink, Text } from "@once-ui-system/core";
+import { Row, Column, IconButton, SmartLink, Text } from "@once-ui-system/core";
 import { person, social } from "@/resources";
 import styles from "./Footer.module.scss";
 
@@ -21,10 +21,15 @@ export const Footer = () => {
           align: "center",
         }}
       >
-        <Text variant="body-default-s" onBackground="neutral-strong">
-          <Text onBackground="neutral-weak">© {currentYear} /</Text>
-          <Text paddingX="4">{person.name}</Text>
-        </Text>
+        <Column gap="4">
+          <Text variant="body-default-s" onBackground="neutral-strong">
+            <Text onBackground="neutral-weak">© {currentYear} /</Text>
+            <Text paddingX="4">{person.name}</Text>
+          </Text>
+          <Text variant="body-default-xs" onBackground="neutral-weak">
+            Website template by <SmartLink href="https://github.com/mahenoorsalat/salat-mahenoor-ai-creative-developer">Salat Mahenoor</SmartLink> — used and modified under <SmartLink href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY‑NC 4.0</SmartLink>
+          </Text>
+        </Column>
         <Row gap="16">
           {social.map(
             (item) =>

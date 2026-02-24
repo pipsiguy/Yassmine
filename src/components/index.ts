@@ -1,6 +1,5 @@
 export { Header } from "./Header";
 export { Footer } from "./Footer";
-export { Mailchimp } from "./Mailchimp";
 export { ContactCTA } from "./ContactCTA";
 export { Services } from "./Services";
 export { ContactForm } from "./ContactForm";

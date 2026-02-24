@@ -191,6 +191,8 @@ export interface About extends BasePageConfig {
     institutions: Array<{
       /** Institution name */
       name: string;
+      /** Timeframe (e.g., 'Sep 2020 - May 2024') */
+      timeframe?: string;
       /** Description of studies */
       description: React.ReactNode;
     }>;

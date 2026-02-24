@@ -5,8 +5,8 @@ import { Button, Heading, Text, Background, Column, Row } from "@once-ui-system/
 import { opacity, SpacingToken } from "@once-ui-system/core";
 
 export const ContactCTA: React.FC<React.ComponentProps<typeof Column>> = ({ ...flex }) => {
-    const whatsappLink = "https://wa.me/919510944489";
-    const emailLink = "mailto:salatmahenoor7.8.6@gmail.com";
+    const emailLink = "mailto:yassmine@uni.minerva.edu";
+    const linkedinLink = "https://www.linkedin.com/in/yassmine-ramadan/";
 
     return (
         <Column
@@ -66,48 +66,30 @@ export const ContactCTA: React.FC<React.ComponentProps<typeof Column>> = ({ ...f
             <Column maxWidth="m" horizontal="center" align="center" gap="l" style={{ zIndex: 1 }}>
                 <Column horizontal="center" align="center" gap="s">
                     <Heading align="center" variant="display-strong-xs">
-                        Ready to launch your project?
+                        Want to contact me?
                     </Heading>
                     <Text align="center" wrap="balance" variant="body-default-l" onBackground="neutral-weak">
-                        Let's discuss how we can bring your vision to life.
+                        Feel free to reach out via email or LinkedIn for any inquiries or collaborations.
                     </Text>
                 </Column>
                 <Row gap="16" wrap horizontal="center">
                     <Button
-                        href={whatsappLink}
-                        prefixIcon="whatsapp"
-                        variant="primary"
-                        size="l"
-                        weight="default"
-                    >
-                        Chat on WhatsApp
-                    </Button>
-                    <Button
                         href={emailLink}
                         prefixIcon="email"
-                        variant="secondary"
+                        variant="primary"
                         size="l"
                         weight="default"
                     >
                         Send an Email
                     </Button>
                     <Button
-                        href="https://www.fiverr.com/salat_mahenoor"
-                        prefixIcon="world"
+                        href={linkedinLink}
+                        prefixIcon="linkedin"
                         variant="secondary"
                         size="l"
                         weight="default"
                     >
-                        Order on Fiverr
-                    </Button>
-                    <Button
-                        href="https://calendly.com/salatmahenoor7-8-6/30min"
-                        prefixIcon="calendar"
-                        variant="secondary"
-                        size="l"
-                        weight="default"
-                    >
-                        Book a Call
+                        LinkedIn
                     </Button>
                 </Row>
             </Column>
