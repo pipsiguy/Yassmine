@@ -1,3 +1,4 @@
+export const dynamic = "force-static";
 import { MetadataRoute } from 'next';
 import { getPosts } from "@/utils/utils";
 import { baseURL, routes as routesConfig } from "@/resources";
