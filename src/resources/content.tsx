@@ -161,28 +161,6 @@ const about: About = {
     display: true,
     title: "Research Experience",
     experiences: [
-            {
-              company: "National Taiwan University",
-              logo: "/images/ntulogo.png",
-              role: "Medical Research Intern",
-              timeframe: "Sep 2023 - Dec 2023 · 4 mos",
-              location: "Taipei, Taipei City, Taiwan · On-site",
-              achievements: [
-                <>Genetics & Neuropathy Research, Immunohistochemistry & Protein Staining (PGP9.5)</>,
-              ],
-              images: [],
-            },
-            {
-              company: "Instituto de Biología y Medicina Experimental (IBYME)",
-              logo: "/images/ibyme-logo.png",
-              role: "Research Intern",
-              timeframe: "Sep 2022 - Dec 2022 · 4 mos",
-              location: "Buenos Aires Province, Argentina · On-site",
-              achievements: [
-                <>Advanced PCR & Gel Electrophoresis Techniques, Research Data Collection & Analysis</>,
-              ],
-              images: [],
-            },
       {
         company: "Schwer Lab — Weill Cornell Medicine",
         timeframe: "2025 - Present",
@@ -196,17 +174,29 @@ const about: About = {
         company: "Minerva University",
         timeframe: "Sep 2023 - May 2024 · 9 mos",
         role: "Genetics Researcher (Capstone Project) — Internship",
-        location: "San Francisco Bay Area · Remote",
         achievements: [
           <>Enhancing Rheumatoid Arthritis Treatment through CRISPR-mediated IL-4 Modulation.<br />
-          Skills: CRISPR-Cas9 Gene Editing, Experimental Design & Hypothesis Testing, +2 skills</>,
+          Skills: CRISPR-Cas9 Gene Editing, Experimental Design & Hypothesis Testing</>,
         ],
-        images: [
-          "Thumbnail for Enhancing Rheumatoid Arthritis Treatment through CRISPR-mediated IL-4 Modulation.pdf"
+        images: [],
+      },
+      {
+        company: "National Taiwan University",
+        timeframe: "Sep 2023 - Dec 2023 · 4 mos",
+        role: "Medical Research Intern",
+        achievements: [
+          <>Genetics & Neuropathy Research, Immunohistochemistry & Protein Staining (PGP9.5)</>,
         ],
-        files: [
-          "Enhancing Rheumatoid Arthritis Treatment through CRISPR-mediated IL-4 Modulation.pdf"
+        images: [],
+      },
+      {
+        company: "Instituto de Biología y Medicina Experimental (IBYME)",
+        timeframe: "Sep 2022 - Dec 2022 · 4 mos",
+        role: "Research Intern",
+        achievements: [
+          <>Advanced PCR & Gel Electrophoresis Techniques, Research Data Collection & Analysis</>,
         ],
+        images: [],
       },
     ],
   },
