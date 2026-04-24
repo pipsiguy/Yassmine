@@ -2,7 +2,6 @@ export { Header } from "./Header";
 export { Footer } from "./Footer";
 export { ContactCTA } from "./ContactCTA";
 export { Services } from "./Services";
-export { ContactForm } from "./ContactForm";
 export { ProjectCard } from "./ProjectCard";
 export { HeadingLink } from "./HeadingLink";
 export { Providers } from "./Providers";

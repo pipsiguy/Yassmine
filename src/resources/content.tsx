@@ -6,7 +6,7 @@ const person: Person = {
   lastName: "Ramadan",
   name: "Yassmine Ramadan",
   role: "Research Tech at Weill Cornell",
-  avatar: "/images/bruh.jpg",
+  avatar: "/images/avatar.jpg",
   email: "yassmine@uni.minerva.edu",
   location: "America/New_York",
   languages: ["English", "Arabic"],
@@ -46,7 +46,7 @@ const home: Home = {
       I'm a Research Technician in the Schwer Lab at Weill Cornell studying yeast gene regulation. I speak English and Arabic and enjoy collaborating across labs.
     </>
   ),
-  image: "/images/bruh.jpg",
+  image: "/images/avatar.jpg",
   path: "/",
   services: [
     {
@@ -225,7 +225,7 @@ const about: About = {
         tags: [
           { name: "CTD Code", icon: "grid" },
           { name: "Transcription", icon: "rocket" },
-          { name: "Phosphate Homeostasis", icon: "disc" },
+          { name: "Phosphate Homeostasis", icon: "star" },
           { name: "Yeast Genetics", icon: "eye" },
         ],
       },
@@ -246,7 +246,7 @@ const work: Work = {
   title: "Yassmine Ramadan | Molecular Biology",
   description: `I am Yassmine Ramadan, a Researcher at Weill Cornell, dedicated to unraveling the molecular mechanisms that sustain cellular health and drive organismal function. As a 2024 graduate of Minerva University, my scientific journey is rooted in yeast RNA biology, with a special focus on RNA polymerase and the intricate effects of phosphate metabolism. Explore my research to discover how tiny molecules shape the big questions of life, health, and innovation.`,
   keywords: ["Molecular Biology", "Yeast RNA", "RNA Polymerase", "Phosphate Metabolism", "Cellular Health", "Weill Cornell", "Minerva University"],
-  path: "/research",
+  path: "/work",
 };
 
 const testimonials: Testimonials = {

@@ -14,7 +14,6 @@ import {
   SpacingToken,
 } from "@once-ui-system/core";
 import { Footer, Header, Providers, StructuredData } from "@/components";
-import { Analytics } from "@vercel/analytics/next";
 import { baseURL, effects, fonts, style, dataStyle, home, person, social } from "@/resources";
 
 export async function generateMetadata() {
@@ -37,8 +36,6 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // JSON-LD for Person/Organization
-  /* Enhanced SEO: Professional Service Schema */
   const structuredData = {
     "@context": "https://schema.org",
     "@graph": [
@@ -51,83 +48,26 @@ export default async function RootLayout({
         url: baseURL,
         sameAs: social.map((s) => s.link),
         description: home.description,
-        knowsAbout: ["Full-Stack Development", "AI Integration", "Three.js", "Next.js", "Python", "Web Design", "SEO"],
-        address: {
-          "@type": "PostalAddress",
-          addressLocality: "Rajkot",
-          addressRegion: "Gujarat",
-          addressCountry: "India"
-        }
+        knowsAbout: [
+          "Molecular Biology",
+          "Yeast Genetics",
+          "RNA Polymerase II",
+          "CTD Code",
+          "Transcription",
+          "RNA Processing",
+          "Phosphate Homeostasis",
+          "CRISPR",
+        ],
+        alumniOf: {
+          "@type": "CollegeOrUniversity",
+          name: "Minerva University",
+        },
+        worksFor: {
+          "@type": "Organization",
+          name: "Weill Cornell Medicine — Schwer Lab",
+        },
       },
-      {
-        "@type": "ProfessionalService",
-        "@id": `${baseURL}/#service`,
-        name: `${person.name} | Global AI & Web Development Agency`,
-        url: baseURL,
-        logo: `${baseURL}/images/avatar.jpg`,
-        image: `${baseURL}/images/avatar.jpg`,
-        description: "Elite Global AI & Web Agency. Delivering premium Next.js platforms, AI automation, and 3D web experiences for high-ticket clients across the USA, Europe, Asia, and globally. Specialized in high-performance digital solutions that dominate search results.",
-        priceRange: "$$$",
-        areaServed: [
-          { "@type": "Country", "name": "US" },
-          { "@type": "Country", "name": "DE" },
-          { "@type": "Country", "name": "AE" },
-          { "@type": "Country", "name": "GB" },
-          { "@type": "Country", "name": "CA" },
-          { "@type": "Country", "name": "AU" },
-          { "@type": "Country", "name": "CH" },
-          { "@type": "Country", "name": "FR" },
-          { "@type": "Country", "name": "NL" },
-          { "@type": "Country", "name": "SG" },
-          { "@type": "Country", "name": "SE" },
-          { "@type": "Country", "name": "NO" },
-          { "@type": "Country", "name": "DK" },
-          { "@type": "Country", "name": "Global" }
-        ],
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: "5.0",
-          reviewCount: "87",
-        },
-        offers: [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Custom AI & LLM Integration",
-              "description": "Enterprise-grade AI solutions using GPT-4 and Claude 3."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Elite Next.js Development",
-              "description": "High-performance, SEO-optimized full-stack platforms."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "3D Web Experiences",
-              "description": "Immersive WebGL and Three.js environments for premium brands."
-            }
-          }
-        ],
-        address: {
-          "@type": "PostalAddress",
-          addressLocality: "Rajkot",
-          addressRegion: "Gujarat",
-          addressCountry: "India"
-        },
-        telephone: "+919510944489",
-        founder: {
-          "@id": `${baseURL}/#person`
-        }
-      }
-
-    ]
+    ],
   };
 
   return (
@@ -144,9 +84,6 @@ export default async function RootLayout({
       )}
     >
       <head>
-        <link rel="icon" href="/images/avatar.jpg" />
-        <link rel="apple-touch-icon" href="/images/avatar.jpg" />
-        <meta name="google-site-verification" content="cMnZb7DD-LViMD84Lb68pko6L9heuvK-bCiTL7ET8Dk" />
         <StructuredData data={structuredData} />
         <script
           id="theme-init"
@@ -267,7 +204,6 @@ export default async function RootLayout({
             </Flex>
           </Flex>
           <Footer />
-          <Analytics />
         </Column>
       </Providers>
     </Flex>

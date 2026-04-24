@@ -27,11 +27,11 @@ Your website pages are showing "Discovered - currently not indexed" in Google Se
 Your code already has these SEO elements properly configured:
 
 1. **Canonical URLs** ✅
-   - Homepage: `https://salat-mahenoor-ai-creative-develope.vercel.app`
-   - About: `https://salat-mahenoor-ai-creative-develope.vercel.app/about`
-   - Blog: `https://salat-mahenoor-ai-creative-develope.vercel.app/blog`
-   - Work: `https://salat-mahenoor-ai-creative-develope.vercel.app/work`
-   - Testimonials: `https://salat-mahenoor-ai-creative-develope.vercel.app/testimonials`
+   - Homepage: `https://yassmineramadan.com`
+   - About: `https://yassmineramadan.com/about`
+   - Blog: `https://yassmineramadan.com/blog`
+   - Work: `https://yassmineramadan.com/work`
+   - Testimonials: `https://yassmineramadan.com/testimonials`
 
 2. **Sitemap.ts** ✅
    - Properly generates sitemap at `/sitemap.xml`
@@ -67,17 +67,17 @@ Follow the workflow I created: `/fix-google-indexing`
 **Step 2: Request Indexing for Priority Pages (10 minutes)**
 1. Use the "URL Inspection" tool at the top
 2. Request indexing for these URLs in this order:
-   - `https://salat-mahenoor-ai-creative-develope.vercel.app/`
-   - `https://salat-mahenoor-ai-creative-develope.vercel.app/about`
-   - `https://salat-mahenoor-ai-creative-develope.vercel.app/blog`
-   - `https://salat-mahenoor-ai-creative-develope.vercel.app/work`
-   - `https://salat-mahenoor-ai-creative-develope.vercel.app/testimonials`
+   - `https://yassmineramadan.com/`
+   - `https://yassmineramadan.com/about`
+   - `https://yassmineramadan.com/blog`
+   - `https://yassmineramadan.com/work`
+   - `https://yassmineramadan.com/testimonials`
 
 **Step 3: Deploy Your Changes**
-The H1 tag fixes need to be deployed to production:
-1. Commit and push your changes
-2. Vercel will auto-deploy
-3. Verify the changes are live
+The fixes need to be deployed to production:
+1. Commit and push your changes to `main`
+2. `.github/workflows/nextjs.yml` will auto-build and deploy to GitHub Pages
+3. Verify the changes are live at https://yassmineramadan.com
 
 ## Expected Timeline
 
@@ -113,10 +113,11 @@ Share your portfolio on:
 - 📝 Share on Twitter/X
 - 📝 Submit to portfolio directories (Awwwards, CSS Design Awards, etc.)
 
-### 2. Verify Vercel Settings
-Ensure these are disabled in Vercel Dashboard → Settings:
-- ❌ Vercel Authentication (must be OFF)
-- ❌ Password Protection (must be OFF)
+### 2. Verify GitHub Pages Settings
+In the repo Settings → Pages:
+- Source: "GitHub Actions"
+- Custom domain: `yassmineramadan.com` (matches `CNAME`)
+- "Enforce HTTPS" checked once the cert provisions
 
 ### 3. Monitor Progress
 Check Google Search Console daily:
@@ -125,7 +126,7 @@ Check Google Search Console daily:
 
 Test indexing status:
 ```
-site:salat-mahenoor-ai-creative-develope.vercel.app
+site:yassmineramadan.com
 ```
 
 ## Troubleshooting
@@ -137,7 +138,7 @@ site:salat-mahenoor-ai-creative-develope.vercel.app
    - If yes, set up proper redirects
 
 2. **Verify robots.txt is accessible**
-   - Visit: https://salat-mahenoor-ai-creative-develope.vercel.app/robots.txt
+   - Visit: https://yassmineramadan.com/robots.txt
    - Should show your robots configuration
 
 3. **Check for crawl errors**
@@ -184,5 +185,5 @@ site:salat-mahenoor-ai-creative-develope.vercel.app
 
 ---
 
-**Last Updated:** 2026-02-14
+**Last Updated:** 2026-04-24
 **Status:** Ready for deployment and sitemap submission

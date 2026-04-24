@@ -12,7 +12,7 @@ import {
   Line,
 } from "@once-ui-system/core";
 import { home, about, person, baseURL, routes } from "@/resources";
-import { ContactCTA, VideoSlider, Services, ContactForm, FAQ, StructuredData } from "@/components";
+import { ContactCTA, VideoSlider, Services, FAQ, StructuredData } from "@/components";
 
 
 import { Posts } from "@/components/blog/Posts";
@@ -182,7 +182,6 @@ export default function Home() {
           </Row>
         </Column>
       )}
-      <ContactForm />
       <FAQ />
       <ContactCTA />
     </Column>
