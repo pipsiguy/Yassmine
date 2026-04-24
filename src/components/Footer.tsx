@@ -27,7 +27,15 @@ export const Footer = () => {
             <Text paddingX="4">{person.name}</Text>
           </Text>
           <Text variant="body-default-xs" onBackground="neutral-weak">
-            Website template by <SmartLink href="https://github.com/mahenoorsalat/salat-mahenoor-ai-creative-developer">Salat Mahenoor</SmartLink> — used and modified under <SmartLink href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY‑NC 4.0</SmartLink>
+            Template by{" "}
+            <SmartLink href="https://github.com/mahenoorsalat/salat-mahenoor-ai-creative-developer">
+              Salat Mahenoor
+            </SmartLink>
+            , used under{" "}
+            <SmartLink href="https://creativecommons.org/licenses/by-nc/4.0/">
+              CC BY‑NC 4.0
+            </SmartLink>
+            .
           </Text>
         </Column>
         <Row gap="16">

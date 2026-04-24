@@ -15,7 +15,7 @@ import { Schemes } from "@once-ui-system/core";
 import { home } from "./index";
 
 // IMPORTANT: Replace with your own domain address - it's used for SEO in meta tags and schema
-const baseURL: string = "https://salat-mahenoor-ai-creative-develope.vercel.app";
+const baseURL: string = "https://yassmineramadan.com";
 
 const routes: RoutesConfig = {
   "/": true,
@@ -184,23 +184,18 @@ const mailchimp: MailchimpConfig = {
 };
 
 // default schema data
-// default schema data
 const schema: SchemaConfig = {
   logo: "/images/avatar.jpg",
   type: "Person",
-  name: "Salat Mahenoor",
-  description: "Hire Salat Mahenoor, a top-ranked Freelance Full-Stack Developer and AI Architect specializing in high-performance Next.js apps and AI/3D interactive web solutions for businesses and agencies.",
-  email: "salatmahenoor7.8.6@gmail.com",
+  name: "Yassmine Ramadan",
+  description:
+    "Yassmine Ramadan is a Research Technician in the Schwer Lab at Weill Cornell Medicine studying yeast gene regulation, RNA Polymerase II CTD signaling, and phosphate homeostasis.",
+  email: "yassmine@uni.minerva.edu",
 };
 
 // social links
 const sameAs: SameAsConfig = {
-  // threads: "",
-  linkedin: "https://www.linkedin.com/in/salat-mahenoor/",
-  github: "https://github.com/mahenoorsalat",
-  dribbble: "https://dribbble.com/salatmahenoor7-8-6",
-  fiverr: "https://www.fiverr.com/salat_mahenoor",
-  // discord: "",
+  linkedin: "https://www.linkedin.com/in/yassmine-ramadan/",
 };
 
 // social sharing configuration for blog posts
